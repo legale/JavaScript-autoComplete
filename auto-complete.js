@@ -51,7 +51,7 @@ var autoComplete = (function(){
 			var elems, type = o.selector.constructor.name.toLowerCase();
         if(type === 'string'){
 			elems = document.querySelectorAll(o.selector);
-		} else if (type.match(/HTML.+?Element/)){
+		} else if (type.match(/html.+?element/)){
 			elems = [o.selector];
 		} else if (type === 'nodelist' || type === 'htmlcollection'){
 			elems = o.selector;
